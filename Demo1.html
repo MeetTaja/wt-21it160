@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demo1
+        </title>
+        <link rel="stylesheet" href="/lab_3/Demo1.css">
+    </head>
+    <body onload="document.getElementById('id_data').focus()">
+        <h1 id="id_h1">
+            Original Array
+        </h1>
+        <div class="con">
+            <input type="text" placeholder="Enter Name" id="id_data" class="id_d">
+            <button onclick="getdata()" class="id_d">Enter</button>
+            
+            <select class="id_d" onchange="check_con()" id="id_select">
+                <option class="id_d" value="Original">Original</option>
+                <option class="id_d" value="Sorted">Sorted</option>
+            </select>
+           
+            <ul id="id_ul"></ul>
+        
+        </div>
+        <script src="./Demo.js"></script>
+    </body>
+</html>

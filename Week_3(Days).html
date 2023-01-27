@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Date Difference Calculator</title>
+<script type="text/javascript">
+function calculateDifference() {
+var start = new Date(document.getElementById("start").value);
+var end = new Date(document.getElementById("end").value);
+var timeDiff = end - start;
+var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+document.getElementById("difference").innerHTML = diffDays + " Days";}
+</script>
+</head>
+<body>
+<h1>Date Difference Calculator</h1>
+<label for="start">Start Date:</label>
+<input type="date" id="start"></input><br><br>
+<label for="end">End Date:</label>
+<input type="date" id="end"></input><br><br>
+<button onclick="calculateDifference()">Calculate Difference</button>
+<div id="difference"></div>
+</body>
+</html>

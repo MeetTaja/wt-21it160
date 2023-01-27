@@ -1,0 +1,15 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: #fff;
+}
+h1{
+    text-align: center;
+}
+.id_d{
+    padding: 5px;
+    font-size: larger;
+    border-radius: 2px;
+    font-weight: 800;
+}

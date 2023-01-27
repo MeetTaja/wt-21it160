@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Document</title> 
+</head> 
+<body> 
+<img src="/Practical_File/Week_5/Cars.jpeg" alt="" srcset="" id="i" style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;"> 
+<script> 
+document.onkeydown = checkKey; 
+function checkKey(e) { 
+let i = document.getElementById("i"); 
+e = e || window.event; 
+if (e.keyCode == '38') { 
+let x = i.style.top; 
+let y = parseInt(x, 10) + 10 ; 
+i.style.top = y + "px" 
+console.log(x,y) 
+} 
+else if (e.keyCode == '40') { 
+let x = i.style.top; 
+let y = parseInt(x, 10) - 10 ; 
+i.style.top = y + "px" 
+} 
+else if (e.keyCode == '37') { 
+let x = i.style.left; 
+let y = parseInt(x, 10) + 10 ; 
+i.style.left = y + "px" 
+} 
+else if (e.keyCode == '39') { 
+let x = i.style.left; 
+let y = parseInt(x, 10) - 10 ; 
+i.style.left = y + "px" 
+} 
+} 
+</script> 
+</body> 
+</html> 

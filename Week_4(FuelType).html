@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cars</title>
+</head>
+<body align="center">
+<script>
+const car = {
+isFuelType: "CNG",
+isType: "SUV",
+isBrand: "BMW",
+display() {
+// console.log(`this car use ${this.isFuelType}. type of this car is ${this.isType} and brand is
+${this.isBrand}`);
+
+21IT156 4
+
+IT255 – Web Technologies CSPIT-KDPIT
+
+document.write(`<h1>calling by object</h1>this car use ${this.isFuelType}. type of this car is
+${this.isType} and brand is ${this.isBrand}<br>`);
+},
+};
+console.log(car.display())
+function GetDetail(petrol, Hatchback, Audi) {
+this.isFuelType = petrol;
+this.isType = Hatchback;
+this.isBrand = Audi;
+this.display = function () {
+document.write(`<h1>calling by Constructor</h1>this car use ${this.isFuelType}. type of this
+car is ${this.isType} and brand is ${this.isBrand}`);
+}
+};
+let ans = new GetDetail("Diesel","Luxury","Tata")
+console.log(ans.display());
+</script>
+</body>
+</html>

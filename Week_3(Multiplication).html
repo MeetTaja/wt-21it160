@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Multiplication Table</title>
+<script type="text/javascript">
+
+function generateTable() {
+var rows = document.getElementById("rows").value;
+var cols = document.getElementById("cols").value;
+var table = document.createElement("table");
+var tableBody = document.createElement("tbody");
+var row, cell, text;
+
+for (var i = 0; i <= rows; i++) {
+row = document.createElement("tr");
+
+for (var j = 0; j <= cols; j++) {
+cell = document.createElement("td");
+text = document.createTextNode(i * j);
+cell.appendChild(text);
+row.appendChild(cell);
+}
+tableBody.appendChild(row);
+}
+
+table.appendChild(tableBody);
+document.getElementById("table").appendChild(table);
+}
+</script>
+
+<style>
+table, td {
+border:1px solid black;
+padding:5px;
+}
+</style>
+</head>
+<body>
+
+<h1>Multiplication Table</h1>
+<label for="rows">Number of Rows:</label>
+<input type="number" id="rows" min="1" value="10"></input><BR><BR>
+<label for="cols">Number of Columns:</label>
+<input type="number" id="cols" min="1" value="10"></input><BR><BR>
+<button onclick="generateTable()">Generate Table</button>
+<div id="table">
+</div>
+</body>
+</html>
